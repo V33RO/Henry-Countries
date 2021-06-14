@@ -1,4 +1,4 @@
-const {Countries}=require('../db')
+const {Countries,Activities}=require('../db')
 const axios=require('axios')
 const{ALL_COUNTRY,URL_COUNTRY, CODE_COUNTRY,}=require('../../const')
 const {Update_Countries}=require('../crud_base/crud_countries')
@@ -36,9 +36,15 @@ async function AllCountries (req,res,next){
     
 }
 
-function IdCountries (req,res,next){
-    let categoria=req.params.idPais;
-    return res.send(categoria);
+async function IdCountries (req,res,next){
+    let id_detail=req.params.idPais;
+    let country_detail= await Countries.findAll({
+        where:{
+        idPais:id_detail},
+        include:[{model:Activities}],
+        });
+
+    return res.send(country_detail);
 }
 
 module.exports={
