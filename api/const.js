@@ -1,6 +1,7 @@
-const URLCOUNTRY='https://restcountries.eu/';
-const ALLCOUNTRY='https://restcountries.eu/rest/v2/all'
-const NAMECOUNTRY='//restcountries.eu/rest/v2/name/{name}'
-const CODECOUNTRY='https://restcountries.eu/rest/v2/alpha/{code}'
+const URL_COUNTRY='https://restcountries.eu/rest/v2/';
+const ALL_COUNTRY='all'
+const NAME_COUNTRY='name/{name}'
+const CODE_COUNTRY='alpha/{code}'
+const API_KEY= "";
+module.exports={ URL_COUNTRY,ALL_COUNTRY,NAME_COUNTRY,CODE_COUNTRY,API_KEY};
 
-module.exports={ URLCOUNTRY,ALLCOUNTRY,NAMECOUNTRY,CODECOUNTRY }
