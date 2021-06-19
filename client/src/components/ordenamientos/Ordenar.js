@@ -7,16 +7,16 @@ import {Link} from 'react-router-dom';
 function Ordenar() {
    
     return (
-     <div>  
-               <li className={styles.dropdown}>
-					<span className={styles.dropbtn}>Order</span>
-					<div className={styles.dropdown_content}>
-						<span>{"Order from A to Z"}</span>
-						<span>{"Order from Z to A"}</span>
-						<span>{"Lower to higher population"}</span>
-						<span>{"Higher to lower Population"}</span>
-					</div>
-				</li>
+     <div> 
+        <li className={styles.dropdown}>
+					<span className={styles.dropbtn}>Filter</span>
+						<div className={styles.dropdown_content}>
+							<span>{"sorted by alphabet A to Z"}</span>
+							<span>{"sorted by alphabet Z to A"}</span>
+							<span >{"population ordered from smallest to largest"}</span>
+							<span >{"population ordered from largest to smallest"}</span>
+						</div>
+        </li>
         </div>
       );
   }
