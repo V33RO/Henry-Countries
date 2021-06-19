@@ -1,0 +1,17 @@
+
+.dropdown_content {
+    color: white;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown_content span:hover {
+    background-color: #524043;
+    border-radius: 0.5rem;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
