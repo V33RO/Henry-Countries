@@ -1,0 +1,44 @@
+.todocontainer {
+	border: 2.5px solid #f8f3c0;
+	background-color: hsla(60, 1%, 50%, 0.643);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	width: 20rem;
+	min-height: 11.5rem;
+	height: auto;
+	margin: 1rem;
+	padding: 0 0.7rem;
+	text-decoration: none;
+}
+
+.todocontainer:hover {
+	background-color:teal;
+}
+
+.name {
+	font-size:xx-large;
+	font-style:initial;
+	color:#bdf30a;
+}
+
+.subregion {
+	font-size:large;
+	margin-top: 4%;
+	color: rgb(2, 0, 0);
+    font-weight:bold;
+}
+
+.subtitulos {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+
+}
+
+.imgtodo {
+	width: 16 rem;
+	height: 7rem;
+	border-radius: 15px;
+    margin-top:2%;
+}

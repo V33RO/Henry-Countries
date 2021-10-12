@@ -19,6 +19,7 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
+const {default:axios} = require("axios");
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
@@ -26,3 +27,15 @@ conn.sync({ force: true }).then(() => {
     console.log('%s listening at 3001'); // eslint-disable-line no-console
   });
 });
+
+let ban=true;
+
+   if(ban){
+      return axios.get('http://localhost:3001/countries')
+      .then((res)=> console.log('base instanciada'))
+      .catch((err)=>console.log('base no creada'),ban=false);
+   }
+  
+
+
+

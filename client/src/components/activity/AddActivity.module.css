@@ -1,0 +1,32 @@
+.page{
+    padding: 6.5rem;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 20rem;
+    height: auto;
+    width: 37rem;
+    padding: 1rem;
+    border: 2px solid #d1cc93;
+    border-radius: 15px;
+    background-color:hsla(60, 1%, 50%, 0.643);
+    color:#080808;
+    font-weight: bold;
+}
+.container label{
+    font-size: large;
+}
+.container input{
+    height: 1.5rem;
+    border-radius: 7px;
+    margin: 1rem;
+    background-color: hsla(184, 74%, 16%, 0.502) ;
+    color: rgb(240, 236, 8);
+    font-size: large;
+}
